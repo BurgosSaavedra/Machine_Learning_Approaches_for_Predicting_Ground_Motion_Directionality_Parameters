@@ -15,10 +15,10 @@ where the median of ratio $` \mu_{\ln(SaRotD100 / SaRotD50)} `$, the multiplier 
 
 ## Overview
 This repository contains the implementation of machine learning models to predict ground motion directionality parameters. The project explores different regression techniques to estimate:
-- **$` \ln(SaRotD50) `$** (Sa_RotD50_var)
-- **$` \ln(SaRotD100) `$** (Sa_RotD100_var)
-- **$`SaRotD100/SaRotD50 ratio`$** (Ratio_median)
-- **$`SaRotD100/SaRotD50 variance`$** (Ratio_var)
+- **$` \ln(SaRotD50) `$**, represented in the code as Sa_RotD50_var
+- **$` \ln(SaRotD100) `$**, represented in the code as Sa_RotD100_var
+- **$`SaRotD100/SaRotD50 `$ ratio**, represented in the code as Ratio_median
+- **$`SaRotD100/SaRotD50 `$ variance**, represented in the code as Ratio_var
 
 Three models were tested: Support Vector Machine (SVM), XGBoost, and Random Forest, with **Random Forest consistently achieving the best performance**.
 
