@@ -5,13 +5,13 @@ The Pacific Earthquake Engineering Research Center (PEER) has promoted the devel
 
 In the last two decades, the Probabilistic Seismic Hazard Assessment (PSHA) methodology has been implemented to characterize site-specific seismic hazards using ground motion models (GMMs). These GMMs predict the mean spectral acceleration spectral response acceleration overall horizontal orientations, denoted as SaRotD50. Thus, SaRotD100 being a more meaningful parameter for structural design, there have been many efforts to predict its median value that, for a specific period of vibration, is expressed as:
 
-$` \mu_{\ln SaRotD100} = \mu_{\ln(SaRotD100 / SaRotD50)} + \mu_{\ln SaGM} `$
+$$ \mu_{\ln SaRotD100} = \mu_{\ln(SaRotD100 / SaRotD50)} + \mu_{\ln SaGM} $$
 
 and its total variance can be written as:
 
-$` \sigma^2_{tot, \ln SaRotD100} = \sigma^2_{\ln SaGM} \left( \frac{\sigma_{\ln SaRotD100}}{\sigma_{\ln SaRotD50}} \right)^2 + \sigma^2_{\ln(SaRotD100 / SaRotD50)} `$
+$$ \sigma^2_{tot, \ln SaRotD100} = \sigma^2_{\ln SaGM} \left( \frac{\sigma_{\ln SaRotD100}}{\sigma_{\ln SaRotD50}} \right)^2 + \sigma^2_{\ln(SaRotD100 / SaRotD50)} $$
 
-where the median of ratio $` \mu_{\ln(SaRotD100 / SaRotD50)} $, the multiplier $ \sigma_{\ln SaRotD100} / \sigma_{\ln SaRotD50} `$, and the standard deviation of $` \ln(SaRotD100 / SaRotD50) `$ were previously estimated using regression methods; and $` \mu_{\ln SaGM} `$ and $` \sigma_{\ln SaGM} `$ were terms that can be estimated using GMMs, related to the RotD50 orientation.
+where the median of ratio $` \mu_{\ln(SaRotD100 / SaRotD50)} `$, the multiplier $` \sigma_{\ln SaRotD100} / \sigma_{\ln SaRotD50} `$, and the standard deviation of $` \ln(SaRotD100 / SaRotD50) `$ were previously estimated using regression methods; and $` \mu_{\ln SaGM} `$ and $` \sigma_{\ln SaGM} `$ were terms that can be estimated using GMMs, related to the RotD50 orientation.
 
 ## Overview
 This repository contains the implementation of machine learning models to predict ground motion directionality parameters. The project explores different regression techniques to estimate:
